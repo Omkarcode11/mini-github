@@ -1,4 +1,5 @@
 .userProfileContainer{
+    width: 100vw;
     display: flex;
     flex-flow: row wrap;
     background-color: rgb(157, 239, 255);
@@ -9,14 +10,13 @@
     height: 85vh;
     margin: 2rem 1rem;
     padding: 1rem;
-    flex: 1;
+    flex: 2;
     border-radius: 0.4rem;
     background-color: aliceblue;
     border: 1px solid lightblue;
 }
 
 .all-repos{
-    flex:3;
     cursor: pointer;
 }
 
@@ -43,6 +43,7 @@ img{
 
 .all-repos{
     height: 85vh;
+    flex: 6;
     margin: 2rem 1rem;
     padding: 1rem 2rem;
     border-radius: 0.4rem;
