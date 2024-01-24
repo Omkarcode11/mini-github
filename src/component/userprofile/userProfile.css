@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 .userProfileContainer{
     width: 100vw;
     display: flex;
@@ -16,9 +23,6 @@
     border: 1px solid lightblue;
 }
 
-.all-repos{
-    cursor: pointer;
-}
 
 .details{
     padding: 0.2rem 0.5rem;
@@ -51,9 +55,14 @@ img{
     border: 1px solid lightblue;
     overflow: scroll;
     scroll-behavior: smooth;
-    
-
+    cursor: pointer;
 }
 .all-repos::-webkit-scrollbar {
     display: none;
   }
+
+
+.all-reposInnerContainer{
+    display: flex;
+    flex-wrap: wrap;
+}

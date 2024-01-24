@@ -61,7 +61,9 @@ function UserProfile() {
         </div>
       </div>
       <div className="all-repos">
+        <div className="all-reposInnerContainer">
         {repos.length?repos.map((ele) => <Repos key={ele.id} repo={ele} />):<div>Loading...</div>}
+        </div>
       </div>
     </div>
   );

@@ -6,5 +6,28 @@
     margin: 10rem 0rem;
     align-items: center;
     text-align: start;
-    
+    overflow: none;
+ 
+}
+
+.repoDetailInnerContainer{
+
+    border: 1px solid black;
+    padding: 2rem;
+    border-radius: 0.3rem;
+    box-shadow: black 1px 1px 50px;
+    background-color: rgb(184, 222, 255);
+}
+
+.repoDetailInnerContainer>div{
+    padding: 0.5rem 0rem;
+}
+
+.copy-btn{
+    margin-left: 0.3rem;
+    background-color: lightgreen;
+    border: 1px solid darkgreen;
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.5rem;
+
 }

@@ -38,7 +38,7 @@ function RepoDetail() {
 
 
   return <div className="repoDetail">
-    <div>
+    <div className="repoDetailInnerContainer">
 
     <h1>{repoDetail.name}</h1>
     <div>{new Date(repoDetail.created_at).toDateString()}</div>
@@ -46,7 +46,7 @@ function RepoDetail() {
     <div>{repoDetail.full_name}</div>
     <div>
       <span>{repoDetail.git_url}</span>
-    <button onClick={copyText}>{isCopy?"Copied":"Copy"}</button>
+    <button className="copy-btn" onClick={copyText}>{isCopy?"Copied":"Copy"}</button>
     </div>
     <div>{repoDetail.language}</div>
     <div>{repoDetail.description}</div>

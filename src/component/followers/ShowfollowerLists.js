@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import {useParams,useNavigate} from 'react-router-dom'
 import GetApi from '../../hooks/GetApi'
 import UserCard from '../userCard/UserCard'
+import './showfollowerList.css'
 
 function ShowFollowersLists() {
   let params = useParams()
@@ -25,7 +26,7 @@ function ShowFollowersLists() {
   },[])
 
   return (
-    <div>
+    <div className='followerList'>
      {followers.length?(
       followers.map((ele)=><UserCard name={ele.login} avatar={ele.avatar_url}/>)
 

@@ -18,7 +18,7 @@ async function handleSubmit(){
   return (
     <div className="SearchButton">
       <div className='searchButtonInnerContainer'>
-       
+      <h1>Github Search</h1>
       <input className='searchInput' placeholder='Enter Username..' value={userName} onChange={(e)=>setUserName(e.target.value)} />
       <button onClick={handleSubmit} className='submitButton'>Submit</button>
       </div>
