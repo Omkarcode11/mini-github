@@ -1,0 +1,10 @@
+.repoDetail{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 10rem 0rem;
+    align-items: center;
+    text-align: start;
+    
+}

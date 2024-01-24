@@ -1,0 +1,29 @@
+.SearchButton{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(206, 206, 206);
+}
+
+.searchButtonInnerContainer{
+
+}
+
+.searchInput{
+    padding: 0.5rem;
+    border-radius: 0.3rem ;
+    margin: 0.2rem;
+    outline: none;
+    border: none;
+}
+
+.submitButton{
+    background-color: antiquewhite;
+    outline: none;
+    border: none;
+    border-radius: 0.3rem ;
+    padding: 0.5rem;
+    
+}

@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter,Route,Routes } from 'react-router-dom';
+import SearchButton from './component/searchButton/SearchButton';
+import UserProfile from './component/userprofile/UserProfile';
+import RepoDetail from './component/repoDetail/RepoDetail';
+import ShowFollowersLists from './component/followers/ShowfollowerLists';
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    
+     <Routes>
+        <Route path="/" element={<SearchButton/>} /> 
+        <Route path="/user/:username" element={<UserProfile/>} /> 
+        <Route path="/repo/:reponame" element={<RepoDetail/>} /> 
+        <Route path='/followers/:username' element={<ShowFollowersLists/>}/>
+      </Routes>
+  </BrowserRouter>
   );
 }
 

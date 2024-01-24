@@ -1,0 +1,58 @@
+.userProfileContainer{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(157, 239, 255);
+   
+}
+
+.userDetail{
+    height: 85vh;
+    margin: 2rem 1rem;
+    padding: 1rem;
+    flex: 1;
+    border-radius: 0.4rem;
+    background-color: aliceblue;
+    border: 1px solid lightblue;
+}
+
+.all-repos{
+    flex:3;
+    cursor: pointer;
+}
+
+.details{
+    padding: 0.2rem 0.5rem;
+}
+
+
+.follower{
+    cursor: pointer;
+}
+
+.userDetailInnerContainer{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: baseline;
+}
+
+img{
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+
+.all-repos{
+    height: 85vh;
+    margin: 2rem 1rem;
+    padding: 1rem 2rem;
+    border-radius: 0.4rem;
+    background-color: rgb(232, 244, 255);
+    border: 1px solid lightblue;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    
+
+}
+.all-repos::-webkit-scrollbar {
+    display: none;
+  }
